@@ -1,0 +1,24 @@
+Configuraciones de application.properties
+
+spring.h2.console.enabled=true: Esta línea habilita la consola de administración de la base de datos H2.
+La consola de H2 es una interfaz web que te permite administrar y visualizar la base de datos mientras
+desarrollas tu aplicación.
+
+spring.datasource.url=jdbc:h2:mem:test: Esta línea especifica la URL de la base de datos H2.
+En este caso, estamos utilizando una base de datos en memoria (mem) con el nombre "test".
+Esto significa que la base de datos se creará en la memoria y se eliminará cuando la aplicación se detenga.
+Puedes cambiar el nombre "test" por cualquier otro nombre que desees.
+
+spring.datasource.username=h2: Aquí se configura el nombre de usuario utilizado para acceder a la base de datos H2.
+ En este caso, se establece como "h2".
+
+spring.datasource.password=h2: Esta línea establece la contraseña utilizada para acceder a la base de datos H2.
+ En este caso, la contraseña también se establece como "h2".
+
+Estas configuraciones son específicas para la base de datos H2 y se utilizan comúnmente en entornos
+de desarrollo o pruebas, donde se desea una base de datos liviana y fácil de configurar.
+Recuerda que puedes ajustar estos valores según tus necesidades y las credenciales que desees utilizar para
+acceder a la base de datos H2 en tu aplicación Spring Boot.
+
+Puedo probarla en el navegador utilizando el localhost:8080 y
+entrar a la bd con: http://localhost:8080/h2-console

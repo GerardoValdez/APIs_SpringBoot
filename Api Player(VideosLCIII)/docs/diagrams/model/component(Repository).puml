@@ -1,0 +1,17 @@
+@startuml
+
+save - [PlayerJpaRepository]
+getAllPlayer - [PlayerJpaRepository]
+createPlayer - [PlayerJpaRepository]
+getById - [PlayerJpaRepository]
+delete - [PlayerJpaRepository]
+update - [PlayerJpaRepository]
+
+@enduml
+
+Mi PlayerJpaRepository me da el acceso
+a diferentes interfaces que me permitira
+hacer diferentes acciones en mi tabla player
+
+Cada interfaz que se expone la vamos a conectar
+con un servicio que va a consumir esa interfaz

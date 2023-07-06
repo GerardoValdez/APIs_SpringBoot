@@ -1,0 +1,14 @@
+@startuml
+
+class player(){
+Long id;
+String name;
+String password;
+String email;
+String avatar;
+LocalDateTime lastLoginDate;
+}
+
+@enduml
+
+Esto es el modelado de la clase para mi app

@@ -1,0 +1,15 @@
+@startuml
+
+entity "players"{
+    @id : number <<gernerated>>
+    user_name : varchar
+    password : varchar
+    email : varchar
+    avatar : varchar
+    last_login: dateTime
+    created_at: dateTime
+   update_at: dateTime
+}
+@enduml
+
+Esto es el diagrama de la base de datos

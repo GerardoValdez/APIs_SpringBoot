@@ -1,0 +1,19 @@
+@startuml
+database "players"
+
+[PlayersJpaRepository] -("players"
+getReferenceById - [PlayersJpaRepository]
+
+[PlayerService] -(getReferenceById
+getPlayerById -(PlayerService)
+
+[PlayerController] -(getPlayerById
+
+@enduml
+
+El controller consume el servicio
+getPlayerById del servicio
+(PlayerService),este servicio acciona
+el metodo getPlayerById que llama
+al Reositorio (PlayerJpaRepository) que
+se conecta con la Base de datos (Players)
